@@ -17,7 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <allure-maven.version>2.10.0</allure-maven.version>
         <allure-junit5.version>2.20.0</allure-junit5.version>
-        <aspectj.version>1.9.6</aspectj.version>
+        <aspectj.version>1.9.9.1</aspectj.version>
     </properties>
 
     <dependencies>
@@ -90,13 +90,7 @@
                         <artifactId>aspectjweaver</artifactId>
                         <version>${aspectj.version}</version>
                     </dependency>
-                    <dependency>
-                        <groupId>org.junit.jupiter</groupId>
-                        <artifactId>junit-jupiter-engine</artifactId>
-                        <version>${junit-jupiter.version}</version>
-                    </dependency>
                 </dependencies>
-
             </plugin>
             <plugin>
                 <groupId>io.qameta.allure</groupId>
@@ -105,6 +99,7 @@
                 <configuration>
                     <reportVersion>${allure-junit5.version}</reportVersion>
                     <resultsDirectory>${project.basedir}/target/allure-results</resultsDirectory>
+                    <allureDownloadUrl>https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/${allure-junit5.version}/allure-commandline-${allure-junit5.version}.zip</allureDownloadUrl>
                 </configuration>
                 <executions>
                     <execution>
