@@ -18,6 +18,11 @@
         <allure-maven.version>2.10.0</allure-maven.version>
         <allure-junit5.version>2.20.0</allure-junit5.version>
         <aspectj.version>1.9.9.1</aspectj.version>
+        <slf4j-api.version>2.0.4</slf4j-api.version>
+        <lombok.version>1.18.24</lombok.version>
+        <logback-classic.version>1.4.5</logback-classic.version>
+        <assertj-core.version>3.23.1</assertj-core.version>
+        <javax.inject.version>1</javax.inject.version>
     </properties>
 
     <dependencies>
@@ -42,22 +47,22 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.24</version>
+            <version>${lombok.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>2.0.3</version>
+            <version>${slf4j-api.version}</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.4.4</version>
+            <version>${logback-classic.version}</version>
         </dependency>
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.23.1</version>
+            <version>${assertj-core.version}</version>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -67,7 +72,7 @@
         <dependency>
             <groupId>javax.inject</groupId>
             <artifactId>javax.inject</artifactId>
-            <version>1</version>
+            <version>${javax.inject.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
