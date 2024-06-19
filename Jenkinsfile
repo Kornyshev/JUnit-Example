@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout from GitHub') {
             steps {
-                echo "Parameter from job UI: ${params.Choice}"
+                echo "Parameter from job UI (changed in GitHub just for check): ${params.Choice}"
                 checkout([
                     $class: 'GitSCM', 
                     branches: [[name: '*/main']],
