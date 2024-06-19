@@ -1,14 +1,9 @@
 pipeline {
     agent any
-
-    tools {
-        maven 'Maven'
-    }
     
     parameters {
         choice(name: 'Choice', choices: ['option'], description: 'Description')
     }
-
 
     stages {
         stage('Checkout from GitHub') {
